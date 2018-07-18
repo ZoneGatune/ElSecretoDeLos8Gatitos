@@ -19,8 +19,8 @@ importScripts('workbox-sw.prod.v1.3.0.js');
  */
 const fileManifest = [
   {
-    "url": "/_nuxt/app.9f544f072cc3c720229b.js",
-    "revision": "784ef7a84458c94f321949dc5f689b39"
+    "url": "/_nuxt/app.2e2aa18fa748934a206a.js",
+    "revision": "a3b2e3116630a0e051f0cc688db3533c"
   },
   {
     "url": "/_nuxt/common.64d112ff5822d6cc3df5.js",
@@ -35,8 +35,8 @@ const fileManifest = [
     "revision": "201190123bdb108a9cb256b1a32e4e7f"
   },
   {
-    "url": "/_nuxt/manifest.3c371a6ba9b830138601.js",
-    "revision": "a05f0e35aca4fdd283dc4f89d7cadccc"
+    "url": "/_nuxt/manifest.3f0e2363fb8aaface86b.js",
+    "revision": "27ae890c8bcf708565d608c924ba90e1"
   },
   {
     "url": "/_nuxt/pages/about.6c9c465c7f362511b17f.js",
@@ -69,7 +69,7 @@ const fileManifest = [
 ];
 
 const workboxSW = new self.WorkboxSW({
-  "cacheId": "ElSecretoDeLos8Gatitos_0.0.1",
+  "cacheId": "elsecretodelos8gatitos_0.0.1",
   "clientsClaim": true,
   "directoryIndex": "/"
 });

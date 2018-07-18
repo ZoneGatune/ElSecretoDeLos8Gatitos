@@ -9,9 +9,9 @@
     "layouts\\default.86fba550a11a8e9eb90b.js",
     "pages\\admin\\settings.529a68ef0f9a02652965.js",
     "pages\\about.6c9c465c7f362511b17f.js",
-    "app.9f544f072cc3c720229b.js",
+    "app.2e2aa18fa748934a206a.js",
     "common.64d112ff5822d6cc3df5.js",
-    "manifest.3c371a6ba9b830138601.js",
+    "manifest.3f0e2363fb8aaface86b.js",
     "common.6ef759542907d5313af2ae815ec0ffe5.css",
     "LICENSES",
     "pages\\login.87d62a60856ed2384a24.js.map",
@@ -22,10 +22,10 @@
     "layouts\\default.86fba550a11a8e9eb90b.js.map",
     "pages\\admin\\settings.529a68ef0f9a02652965.js.map",
     "pages\\about.6c9c465c7f362511b17f.js.map",
-    "app.9f544f072cc3c720229b.js.map",
+    "app.2e2aa18fa748934a206a.js.map",
     "common.6ef759542907d5313af2ae815ec0ffe5.css.map",
     "common.64d112ff5822d6cc3df5.js.map",
-    "manifest.3c371a6ba9b830138601.js.map",
+    "manifest.3f0e2363fb8aaface86b.js.map",
     "icons/icon_64.d00bMwo0t0c.png",
     "icons/icon_120.d00bMwo0t0c.png",
     "icons/icon_144.d00bMwo0t0c.png",
@@ -33,13 +33,13 @@
     "icons/icon_192.d00bMwo0t0c.png",
     "icons/icon_384.d00bMwo0t0c.png",
     "icons/icon_512.d00bMwo0t0c.png",
-    "manifest.4aa0b5dc.json",
+    "manifest.683594d2.json",
     "index.spa.html"
   ],
   "initial": [
-    "manifest.3c371a6ba9b830138601.js",
+    "manifest.3f0e2363fb8aaface86b.js",
     "common.64d112ff5822d6cc3df5.js",
-    "app.9f544f072cc3c720229b.js"
+    "app.2e2aa18fa748934a206a.js"
   ],
   "async": [
     "pages\\login.87d62a60856ed2384a24.js",
@@ -101,12 +101,6 @@
       22
     ],
     "e452ca90": [
-      8,
-      11,
-      21,
-      22
-    ],
-    "a4db88ca": [
       8,
       11,
       21,
@@ -513,6 +507,12 @@
       22
     ],
     "3bec7364": [
+      8,
+      11,
+      21,
+      22
+    ],
+    "7d9d21a9": [
       8,
       11,
       21,
