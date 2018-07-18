@@ -1,3 +1,11 @@
+<template>
+  <div id="__nuxt">
+    <nuxt-loading ref="loading"></nuxt-loading>
+    <component v-if="layout" :is="nuxt.err ? 'nuxt' : layout"></component>
+  </div>
+</template>
+
+<script>
 import Vue from 'vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 
@@ -8,46 +16,20 @@ import '..\\assets\\css\\app.styl'
 
 let layouts = {
 
-  "_default": () => import('..\\layouts\\default.vue'  /* webpackChunkName: "layouts_default" */).then(m => m.default || m)
+  "_default": () => import('..\\layouts\\default.vue'  /* webpackChunkName: "layouts\\default" */).then(m => m.default || m)
 
 }
 
 let resolvedLayouts = {}
 
 export default {
-  head: {"title":"Nuxt Firebase Auth","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Nuxt.js project"},{"name":"mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-title","content":"nuxt-firebase-auth"},{"name":"theme-color","content":"#3f51b5"},{"name":"og:type","content":"website"},{"name":"og:title","content":"nuxt-firebase-auth"},{"name":"og:description","content":"Nuxt.js with Firebase Auth project"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:300,400,500,700|Material+Icons"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.cb51c44c.json"},{"rel":"shortcut icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_64.d00bMwo0t0c.png"},{"rel":"apple-touch-icon","href":"\u002F_nuxt\u002Ficons\u002Ficon_512.d00bMwo0t0c.png","sizes":"512x512"}],"style":[],"script":[],"htmlAttrs":{"lang":"en"}},
-  render(h, props) {
-    const loadingEl = h('nuxt-loading', { ref: 'loading' })
-    const layoutEl = h(this.layout || 'nuxt')
-    const templateEl = h('div', {
-      domProps: {
-        id: '__layout'
-      },
-      key: this.layoutName
-    }, [ layoutEl ])
-
-    const transitionEl = h('transition', {
-      props: {
-        name: 'layout',
-        mode: 'out-in'
-      }
-    }, [ templateEl ])
-
-    return h('div',{
-      domProps: {
-        id: '__nuxt'
-      }
-    }, [
-      loadingEl,
-      transitionEl
-    ])
-  },
+  head: {"title":"Nuxt Firebase Auth","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Nuxt.js project"},{"name":"mobile-web-app-capable","content":"yes"},{"name":"apple-mobile-web-app-title","content":"ElSecretoDeLos8Gatitos"},{"name":"theme-color","content":"#3f51b5"},{"name":"og:type","content":"website"},{"name":"og:title","content":"ElSecretoDeLos8Gatitos"},{"name":"og:description","content":"Nuxt.js with Firebase Auth project"}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"},{"rel":"stylesheet","href":"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"},{"rel":"manifest","href":"/_nuxt/manifest.4aa0b5dc.json"},{"rel":"shortcut icon","href":"/_nuxt/icons/icon_64.d00bMwo0t0c.png"},{"rel":"apple-touch-icon","href":"/_nuxt/icons/icon_512.d00bMwo0t0c.png","sizes":"512x512"}],"style":[],"script":[],"htmlAttrs":{"lang":"en"}},
   data: () => ({
     layout: null,
     layoutName: ''
   }),
   beforeCreate () {
-    Vue.util.defineReactive(this, 'nuxt', this.$options.nuxt)
+    Vue.util.defineReactive(this, 'nuxt', this.$options._nuxt)
   },
   created () {
     // Add this.$nuxt in child instances
@@ -106,4 +88,5 @@ export default {
     NuxtLoading
   }
 }
+</script>
 
