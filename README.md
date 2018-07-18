@@ -1,11 +1,11 @@
-# STATIC
+# Nuxt.js Firebase Auth - SSR Version
 
-This directory contains your static files.
-Each file inside this directory is mapped to /.
+This is an example of using Nuxt.js in SPA mode with Firebase Authentication
 
-Example: /static/robots.txt is mapped as /robots.txt.
+[Live Demo](https://nuxt-firebase-auth.firebaseapp.com)
 
-More information about the usage of this directory in the documentation:
-https://nuxtjs.org/guide/assets#static
+[Blog Article - Part 1 - Overview](https://www.davidroyer.me/blog/nuxtjs-firebase-auth)
 
-**This directory is not required, you can delete it if you don't want to use it.**
+![alt text](/nuxt-firebase-authentication.jpg "Screenshot")
+
+**More Info Soon...**
