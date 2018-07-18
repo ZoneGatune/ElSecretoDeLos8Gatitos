@@ -3,13 +3,13 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _b65e7960 = () => import('..\\pages\\login.vue' /* webpackChunkName: "pages_login" */).then(m => m.default || m)
-const _0c987436 = () => import('..\\pages\\admin.vue' /* webpackChunkName: "pages_admin" */).then(m => m.default || m)
-const _0c8ed78c = () => import('..\\pages\\admin\\index.vue' /* webpackChunkName: "pages_admin_index" */).then(m => m.default || m)
-const _71be44d9 = () => import('..\\pages\\admin\\settings.vue' /* webpackChunkName: "pages_admin_settings" */).then(m => m.default || m)
-const _83c7210c = () => import('..\\pages\\admin\\items.vue' /* webpackChunkName: "pages_admin_items" */).then(m => m.default || m)
-const _891d7518 = () => import('..\\pages\\about.vue' /* webpackChunkName: "pages_about" */).then(m => m.default || m)
-const _49adbf8e = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */).then(m => m.default || m)
+const _6fe94d37 = () => import('..\\pages\\login.vue' /* webpackChunkName: "pages_login" */).then(m => m.default || m)
+const _509e03c6 = () => import('..\\pages\\admin.vue' /* webpackChunkName: "pages_admin" */).then(m => m.default || m)
+const _53a9abc5 = () => import('..\\pages\\admin\\index.vue' /* webpackChunkName: "pages_admin_index" */).then(m => m.default || m)
+const _06464c00 = () => import('..\\pages\\admin\\settings.vue' /* webpackChunkName: "pages_admin_settings" */).then(m => m.default || m)
+const _053743b3 = () => import('..\\pages\\admin\\items.vue' /* webpackChunkName: "pages_admin_items" */).then(m => m.default || m)
+const _f2ec614a = () => import('..\\pages\\about.vue' /* webpackChunkName: "pages_about" */).then(m => m.default || m)
+const _b37cabc0 = () => import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */).then(m => m.default || m)
 
 
 
@@ -71,38 +71,38 @@ export function createRouter () {
     routes: [
 		{
 			path: "/login",
-			component: _b65e7960,
+			component: _6fe94d37,
 			name: "login"
 		},
 		{
 			path: "/admin",
-			component: _0c987436,
+			component: _509e03c6,
 			children: [
 				{
 					path: "",
-					component: _0c8ed78c,
+					component: _53a9abc5,
 					name: "admin"
 				},
 				{
 					path: "settings",
-					component: _71be44d9,
+					component: _06464c00,
 					name: "admin-settings"
 				},
 				{
 					path: "items",
-					component: _83c7210c,
+					component: _053743b3,
 					name: "admin-items"
 				}
 			]
 		},
 		{
 			path: "/about",
-			component: _891d7518,
+			component: _f2ec614a,
 			name: "about"
 		},
 		{
 			path: "/",
-			component: _49adbf8e,
+			component: _b37cabc0,
 			name: "index"
 		}
     ],
